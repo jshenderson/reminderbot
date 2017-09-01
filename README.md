@@ -1,1 +1,1 @@
-# reminderbot
+This is my second attempt. I'm starting from scratch, and will let you know how it goes.
