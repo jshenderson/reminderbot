@@ -9,9 +9,12 @@ server.listen(process.env.PORT || 3000, function()
    console.log('%s listening to %s', server.name, server.url); 
 });
 
+var appId = process.env.MICROSOFT_APP_ID || "Missing Your App ID"; 
+var appPassword = process.env.MICROSOFT_APP_PASSWORD || "Missing your app password";
+
 // Create chat bot
 var connector = new builder.ChatConnector
-({ appId: 'c01c46ee-21b6-4f7c-a22c-7172802bb5f1', appPassword: 'XHTGPKWkMTYjtbUzX7qdPxa' }); 
+({ appId: process.env.MICROSOFT_APP_ID, appPassword: process.env.MICROSOFT_APP_PASSWORD }); 
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
