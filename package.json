@@ -1,0 +1,23 @@
+{
+  "name": "reminderbot",
+  "version": "1.0.0",
+  "description": "\"A simple reminder bot built in Node.js on MS Bot Framework\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshenderson/reminderbot.git"
+  },
+  "keywords": [
+    "bot",
+    "teams"
+  ],
+  "author": "Josh Henderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshenderson/reminderbot/issues"
+  },
+  "homepage": "https://github.com/jshenderson/reminderbot#readme"
+}
